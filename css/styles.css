@@ -457,3 +457,85 @@ p{
 
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/* Responsive Design */
+@media (max-width: 1024px) {
+    h1, h2, h3, h4 {
+        font-size: 50px; /* Adjust font sizes for tablets */
+    }
+
+    .name-text1, .name-text2, .name-text3, .name-text4 {
+        font-size: 100px; /* Adjust name-text size for smaller screens */
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10 {
+        height: 60vh; /* Adjust image height for tablet screens */
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .logo, .resume, .certificationbutton, .contact {
+        font-size: 24px; /* Reduce button font sizes for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    h1, h2, h3, h4 {
+        font-size: 40px; /* Smaller font size for phones */
+    }
+
+    .name-text1, .name-text2, .name-text3, .name-text4 {
+        font-size: 80px; /* Adjust name-text for smaller screens */
+    }
+
+    .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10 {
+        height: 50vh; /* Reduce image height for smaller devices */
+    }
+
+    .header {
+        padding: 10px 15px;
+    }
+
+    .logo, .resume, .certificationbutton, .contact {
+        font-size: 20px; /* Adjust button sizes */
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .column {
+        min-width: 100%; /* Stack columns vertically */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3, h4 {
+        font-size: 30px; /* Further reduce font size for very small devices */
+    }
+
+    .name-text1, .name-text2, .name-text3, .name-text4 {
+        font-size: 60px; /* Adjust name-text for very small screens */
+    }
+
+    .image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9, .image10 {
+        height: 40vh; /* Further reduce image height for phones */
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 10px 5px;
+    }
+
+    .logo, .resume, .certificationbutton, .contact {
+        font-size: 18px; /* Adjust button font sizes */
+    }
+}
