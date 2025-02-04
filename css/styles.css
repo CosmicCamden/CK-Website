@@ -494,7 +494,7 @@ p{
     }
 
     .name-text1, .name-text2, .name-text3, .name-text4 {
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
     }
 
@@ -667,7 +667,7 @@ p{
 	}
 	
 	.certificationbutton {
-		font-size: 2em;
+		font-size: 16px;
 		text-align: center;
 		margin: 10%;
 		margin-bottom: 0%;
