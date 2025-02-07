@@ -61,7 +61,8 @@ p{
 }
 
 
-/*name-text--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*name-text - title word text--------------------------------------------------------------------------------------------------------------------------------------------*/
 .name-text1{
 	text-align: center;
 	font-family: 'impact';
@@ -144,12 +145,11 @@ p{
 .container-text {
     position: relative; /* container to allow absolute positioning within it */
     width: 100%; /* ensure the container takes full width */
-    height: 100vh; /* set the height to the full height of the viewport, adjust as needed */
+    height: 100vh; /* set the height to the full height of the viewport*/
     display: flex;
     justify-content: center; /* center horizontally */
     align-items: center; /* center vertically */
 }
-
 
 
 
@@ -253,9 +253,6 @@ p{
 
 
 
-
-
-
 /*navbar--------------------------------------------------------------------------------------------------------------------------------------------*/
 .header{
 	position: fixed;
@@ -273,7 +270,7 @@ p{
 
 
 
-/*home button logo--------------------------------------------------------------------------------------------------------------------------------------------*/	
+/*home button logo*/	
 .logo{
 	opacity: 0.7;
 	font-family: 'league spartan';
@@ -298,8 +295,7 @@ p{
 
 
 
-
-/*resume button--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*resume button*/
 .resume{
 	opacity: 0.7;
 	font-family: 'league spartan';
@@ -324,7 +320,9 @@ p{
 }
 
 
-/*standard button--------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*other buttons--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*certification button*/
 .certificationbutton{
 	font-family: 'league spartan';
 	border: 3px solid black;
@@ -348,7 +346,7 @@ p{
 
 
 
-/*contact button--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*contact button*/
 .contact{
 	font-family: 'league spartan';
 	border: 3px solid black;
@@ -390,12 +388,13 @@ p{
 }
 
 .hca{
-	height: 125px;
+	height: 200px;
 	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 .cisco{
-	height: 125px;
+	height: 450px;
 	padding-bottom: 20px;
 }
 
@@ -414,6 +413,8 @@ p{
 	height: 300px;
 	padding-bottom: 20px;
 }
+
+
 
 /*columns--------------------------------------------------------------------------------------------------------------------------------------------*/
 .column {
@@ -465,11 +466,21 @@ p{
 }
 
 
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------------------------------------------*/
 
+/*Media Queries-------------------------------------------------------------------------------------------------------------------------------*/
 
 /* General reset and base styles for all screen sizes */
 * {
@@ -478,12 +489,12 @@ p{
     box-sizing: border-box;
 }
 
-/* Media queries */
 
-/* For medium screens, such as tablets */
+
+/* For extra small screens, such as phones-------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (max-width: 579px) {
 	    header {
-        flex-direction: column;
+        
         align-items: center;
         text-align: center;
     }
@@ -544,8 +555,6 @@ p{
 		padding: 10px;
 	}
 	
-	
-	
     .image4 .column {
         width: 100%;
         margin-bottom: 0px;
@@ -658,7 +667,7 @@ p{
 		font-size: 2em;
 	}
 	
-	.container h3{
+	.container h4{
 		font-size: 1.5em;
 	}
 	
@@ -678,10 +687,9 @@ p{
 
 
 
-/* For medium screens, such as tablets */
+/* For small screens, such as tablets-------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width: 580px) and (max-width: 1024px) {
     header {
-        flex-direction: column;
         align-items: center;
         text-align: center;
     }
@@ -707,7 +715,7 @@ p{
     }
 
     .image2 .container h1{
-		font-size: 3em;
+		font-size: 4em;
         text-align: center;
     }
 
@@ -731,7 +739,7 @@ p{
     }
 	
 	.hca {
-		max-width: 200px;
+		max-width: 250px;
 		height: auto;
 		padding: 10px;
 	}
@@ -741,8 +749,6 @@ p{
 		height: auto;
 		padding: 10px;
 	}
-	
-	
 	
     .image4 .column {
         width: 100%;
@@ -777,11 +783,6 @@ p{
         height: auto;
         margin: 0 auto;
 		padding: 0px;
-    }
-
-    iframe {
-        width: 100%;
-        height: 250px;
     }
 
     .image7 .container {
@@ -856,12 +857,12 @@ p{
 		font-size: 2em;
 	}
 	
-	.container h3{
+	.container h4{
 		font-size: 1.5em;
 	}
 	
 	.container p{
-		font-size: 1.15em;
+		font-size: 1.25em;
 	}
 	
 	.certificationbutton {
@@ -874,3 +875,467 @@ p{
 	
 }
 
+
+
+/* For medium screens, such as larger tablets-------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1025px) and (max-width: 1919px) {
+    header {
+        
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo, .resume {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .name-text1, .name-text2, .name-text3, .name-text4 {
+        font-size: 6em;
+        text-align: center;
+    }
+
+    .image2 .container {
+        
+        text-align: center;
+    }
+
+    .image2 .container p{
+		font-size: 1.15em;
+        text-align: center;
+    }
+
+    .image2 .container h1{
+		font-size: 4em;
+        text-align: center;
+    }
+
+    .image2 .column, .image2 .column1 {
+        width: 100%;
+    }
+
+    .pfp {
+        width: 80%;
+        max-width: 275px;
+        height: auto;
+    }
+
+	.image2, .image4, .image5, .image6, .image7, .image8, .image9, .image10, .image11 {
+		height: 100%;
+	}
+
+    .image4 .container {
+        text-align: center;
+    }
+	
+	.hca {
+		max-width: 250px;
+		height: auto;
+		padding: 10px;
+	}
+	
+	.cisco {
+		max-width: 200px;
+		height: auto;
+		padding: 10px;
+	}
+	
+    .image4 .column {
+        width: 100%;
+        margin-bottom: 0px;
+		padding-bottom: 0px;
+		overflow-wrap: break-word;
+    }
+
+    .image5 .container {
+        text-align: center;
+    }
+
+    .image5 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .image6 .container {
+        text-align: center;
+    }
+
+    .image6 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .degree, .wilmu {
+        width: 100%;
+        max-width: 275px;
+        height: auto;
+        margin: 0 auto;
+		padding: 0px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 250px;
+    }
+
+    .image7 .container {
+        text-align: center;
+    }
+
+    .image7 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .cert {
+        width: 35%;
+		height: auto;
+        margin: 10px auto;
+    }
+
+    .image8 .container {
+        text-align: center;
+    }
+
+    .image8 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .idf {
+        width: 80%;
+        max-width: 250px;
+		height: auto;
+        margin: 0 auto;
+    }
+
+    .image9 .container {
+        text-align: center;
+    }
+
+    .image9 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .degree {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .image10 .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image10 .column {
+        width: 100%;
+    }
+
+    .contact {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+	
+	.container h1, h2 {
+		font-size: 2.5em;
+	}
+	
+	.container h3{
+		font-size: 2em;
+	}
+	
+	.container h4{
+		font-size: 1.5em;
+	}
+	
+	.container p{
+		font-size: 1.25em;
+	}
+	
+	.certificationbutton {
+		font-size: 2em;
+		text-align: center;
+		margin: 10%;
+		margin-bottom: 0%;
+		margin-top: 0%;
+	}
+	
+}
+
+
+
+/* For larger screens-------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 2560px) and (max-width:3839px)  {
+    header {
+        
+        align-items: center;
+        text-align: center;
+    }
+
+    .name-text1, .name-text2, .name-text3, .name-text4 {
+        font-size: 12em;
+        text-align: center;
+    }
+
+    .image2 .column, .image2 .column1 {
+        width: 100%;
+    }
+
+    .image4 .container {
+        text-align: center;
+    }
+	
+    .image4 .column {
+        width: 100%;
+        margin-bottom: 0px;
+		padding-bottom: 0px;
+		overflow-wrap: break-word;
+    }
+
+    .image5 .container {
+        text-align: center;
+    }
+
+    .image5 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .image6 .container {
+        text-align: center;
+    }
+
+    .image6 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+	.wilmu {
+        width: 125%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+		padding: 0px;
+    }
+
+    iframe {
+        width: 75%;
+        height: 75%;
+    }
+
+    .image7 .container {
+        text-align: center;
+    }
+
+    .image7 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .cert {
+        width: 35%;
+		height: auto;
+        margin: 10px auto;
+    }
+
+    .image8 .container {
+        text-align: center;
+    }
+
+    .image8 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .image9 .container {
+        text-align: center;
+    }
+
+    .image9 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .image10 .container {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .image10 .column {
+        width: 100%;
+    }
+
+	.container h1, h2 {
+		font-size: 4.75em;
+	}
+	
+	.container h3{
+		font-size: 4.25em;
+	}
+	
+	.container h4{
+		font-size: 3.75em;
+	}
+	
+	.container p{
+		font-size: 2.75em;
+	}
+	
+}
+
+
+
+/* For 4k screens and larger------------------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 3840px) {
+    header {
+        
+        align-items: center;
+        text-align: center;
+    }
+
+    .name-text1, .name-text2, .name-text3, .name-text4 {
+        font-size: 18em;
+        text-align: center;
+    }
+
+    .image2 .column, .image2 .column1 {
+        width: 100%;
+    }
+
+    .image4 .container {
+        text-align: center;
+    }
+	
+    .image4 .column {
+        width: 100%;
+        margin-bottom: 0px;
+		padding-bottom: 0px;
+		overflow-wrap: break-word;
+    }
+
+    .image5 .container {
+        text-align: center;
+    }
+
+    .image5 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .image6 .container {
+        text-align: center;
+    }
+
+    .image6 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+	.wilmu {
+        width: 125%;
+        max-width: 350px;
+        height: auto;
+        margin: 0 auto;
+		padding: 0px;
+    }
+
+    iframe {
+        width: 75%;
+        height: 75%;
+    }
+
+    .image7 .container {
+        text-align: center;
+    }
+
+    .image7 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .cert {
+        width: 35%;
+		height: auto;
+        margin: 10px auto;
+    }
+
+    .image8 .container {
+        text-align: center;
+    }
+
+    .image8 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .image9 .container {
+        text-align: center;
+    }
+
+    .image9 .column {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .image10 .container {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    .image10 .column {
+        width: 100%;
+    }
+
+	.container h1, h2 {
+		font-size: 5.75em;
+	}
+	
+	.container h3{
+		font-size: 5.25em;
+	}
+	
+	.container h4{
+		font-size: 4.75em;
+	}
+	
+	.container p{
+		font-size: 3.75em;
+	}
+	
+	.degree {
+		height: 60%;
+		width: auto;
+	}
+	
+	    .logo, .resume, .certificationbutton, .contact {
+        font-size: 3.75em;
+        margin: 5px 0;
+    }
+	
+	.idf {
+		height: 50%;
+		width: auto;
+	}
+	
+	.hca {
+		height: 30%;
+		width: auto;
+	}
+	
+		.cisco {
+		height: 70%;
+		width: auto;
+	}
+	
+	.pfp {
+		height: 70%;
+		width: auto;
+	}
+}
+
+
+
+/*END------------------------------------------------------------------------------------------------------------------------*/
